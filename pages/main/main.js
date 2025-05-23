@@ -9,7 +9,12 @@ export default function main(){
         }`
 
     const main = cE("div", style)
-    main.appendChild(loading())
-    main.appendChild(content())
+    window.addEventListener(
+        "load",
+        () => {
+            main.appendChild(loading())
+            main.appendChild(content())
+        }
+    )
     return(main)
 }
