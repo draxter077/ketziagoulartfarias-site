@@ -7,6 +7,8 @@ export default function heart(){
             width:150px;
             height:150px;
             cursor:pointer;
+            opacity:0;
+            transition:opacity 1s;
             animation:goDown 4s linear 0s infinite alternate, goRight 2.73s linear 0s infinite alternate, rotating 2s linear 0s infinite forwards;
         }
         @keyframes goDown{
