@@ -8,6 +8,7 @@ export default function loading(){
             left:0%;
             width:100%;
             height:100dvh;
+            overflow:hidden;
             background:var(--colorBlack);
             z-index:3;
             transition:opacity 1s;

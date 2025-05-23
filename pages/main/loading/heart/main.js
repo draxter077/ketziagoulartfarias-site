@@ -8,7 +8,7 @@ export default function heart(){
             height:150px;
             cursor:pointer;
             opacity:0;
-            transition:opacity 1s;
+            transition:opacity 1s, transform 3s;
             animation:goDown 4s linear 0s infinite alternate, goRight 2.73s linear 0s infinite alternate, rotating 2s linear 0s infinite forwards;
         }
         @keyframes goDown{
@@ -30,23 +30,22 @@ export default function heart(){
         "click",
         async function a(){
             heart.style.animationPlayState = "paused";
+            heart.style.transform = "scale(10)"
             let main = document.getElementById("root").children[0]
 
-            for(let i = 0; i < 100; i++){
+            for(let i = 0; i < 300; i++){
                 let b = balloon()
                 b.style.width = "15%"
-                b.style.top = "100%"
+                b.style.top = "150%"
                 b.style.left = Math.random()*100 + "%"
                 b.style.transition = "top 2s"
                 main.appendChild(b)
                 await new Promise(resolve => setTimeout(resolve, 5))
                 b.style.top = "-100%"
             }
-
             main.children[0].style.opacity = 0
             await new Promise(resolve => setTimeout(resolve, 1000))
             main.removeChild(main.children[0])
-
             let text = main.children[0].children[1].children
             await new Promise(resolve => setTimeout(resolve, 2000))
             for(let i = 0; i < text.length; i++){
