@@ -11,6 +11,10 @@ export default function title(){
             font-size:21px;
             color:var(--colorWhite);
             width:80%;
+        }
+        :responsive{
+            width:95%;
+            font-size:17px;
         }`
 
     const title = cE("div", style)

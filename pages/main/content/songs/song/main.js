@@ -9,6 +9,9 @@ export default function song(s){
             align-items:center;
             width:30%;
             margin:10px 0px 0px 0px;
+        }
+        :responsive{
+            width:95%;
         }`
 
     const song = cE("div", style)

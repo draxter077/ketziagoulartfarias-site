@@ -11,6 +11,9 @@ export default function songs(){
             margin:20px 0px 0px 0px;
             opacity:0;
             transition:opacity 1s;
+        }
+        :responsive{
+            flex-direction:column;
         }`
 
     const songs = cE("div", style)
