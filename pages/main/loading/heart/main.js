@@ -26,6 +26,7 @@ export default function heart(){
 
     const heart = cE("img", style)
     heart.src = "./assets/heart.png"
+    let k = balloon() // Para gerar mais rapidamente as imagens depois
     heart.addEventListener(
         "click",
         async function a(){
