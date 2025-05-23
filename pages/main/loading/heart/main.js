@@ -37,7 +37,7 @@ export default function heart(){
             for(let i = 0; i < 300; i++){
                 let b = balloon()
                 b.style.width = "15%"
-                b.style.top = "150%"
+                b.style.top = "100%"
                 b.style.left = Math.random()*100 + "%"
                 b.style.transition = "top 2s"
                 main.appendChild(b)
