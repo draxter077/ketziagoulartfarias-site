@@ -199,7 +199,7 @@ cE("root", `html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquo
     	margin:0px;
     }
     ::-webkit-scrollbar-thumb{
-        background:var(--colorBlack);
+        background:var(--colorWhite);
         border-radius:20px;
     }
     ::-webkit-scrollbar-button{

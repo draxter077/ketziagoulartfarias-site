@@ -12,7 +12,7 @@ export default function content(){
             height:100dvh;
             padding:50px 0px;
             background:var(--colorPurple);
-            overflow:scroll;
+            overflow-y:scroll;
         }`
 
     const content = cE("div", style)
