@@ -51,9 +51,10 @@ export default function heart(){
             await new Promise(resolve => setTimeout(resolve, 2000))
             for(let i = 0; i < text.length; i++){
                 text[i].style.opacity = 1;
-                await new Promise(resolve => setTimeout(resolve, 50))
-                if(text[i].innerHTML == "<br>"){
-                    await new Promise(resolve => setTimeout(resolve, 2000))
+                let l = text[i].innerHTML.length
+                await new Promise(resolve => setTimeout(resolve, 200))
+                if((text[i].innerHTML == "<br>" || text[i].innerHTML[l - 1] == "." || text[i].innerHTML[l - 1] == "," || text[i].innerHTML[l - 1] == ";") && text[i + 1].innerHTML != "<br>"){
+                    await new Promise(resolve => setTimeout(resolve, 1500))
                 }
             }
             
