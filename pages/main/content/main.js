@@ -16,6 +16,7 @@ export default function content(){
         }`
 
     const content = cE("div", style)
+    content.id = "content"
     content.appendChild(photo())
     content.appendChild(title())
     content.appendChild(songs())

@@ -50,13 +50,18 @@ export default function heart(){
             let text = main.children[0].children[1].children
             await new Promise(resolve => setTimeout(resolve, 2000))
             for(let i = 0; i < text.length; i++){
+                if(text[i].innerHTML != "<br>"){
+                    text[i].scrollIntoView({behavior:"smooth",block: "end",inline: "nearest"})
+                }
                 text[i].style.opacity = 1;
                 let l = text[i].innerHTML.length
                 await new Promise(resolve => setTimeout(resolve, 200))
-                if((text[i].innerHTML == "<br>" || text[i].innerHTML[l - 1] == "." || text[i].innerHTML[l - 1] == "," || text[i].innerHTML[l - 1] == ";") && text[i + 1].innerHTML != "<br>"){
+                if(i + 1 != text.length && (text[i].innerHTML == "<br>" || text[i].innerHTML[l - 1] == "." || text[i].innerHTML[l - 1] == "," || text[i].innerHTML[l - 1] == ";") && text[i + 1].innerHTML != "<br>"){
                     await new Promise(resolve => setTimeout(resolve, 1500))
                 }
             }
+
+            document.getElementById("content").scrollBy(0,1000)
             
             while(true){
                 let b = balloon()
