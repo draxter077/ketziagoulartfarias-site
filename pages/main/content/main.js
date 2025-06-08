@@ -11,7 +11,7 @@ export default function content(){
             width:100%;
             height:100dvh;
             padding:50px 0px;
-            background:var(--colorPurple);
+            background:var(--colorBlack);
             overflow-y:scroll;
         }`
 

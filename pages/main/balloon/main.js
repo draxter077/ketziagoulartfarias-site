@@ -10,6 +10,6 @@ export default function balloon(){
         }`
 
     const balloon = cE("img", style)
-    balloon.src = "./assets/balloon.png"
+    balloon.src = "./assets/heart.png"
     return(balloon)
 }

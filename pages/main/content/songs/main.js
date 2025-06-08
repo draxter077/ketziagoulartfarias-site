@@ -19,7 +19,8 @@ export default function songs(){
     const songs = cE("div", style)
     songs.id = "songs"
     let s = ["Tem alguém de aniversário","Na chuva, conheci alguém",
-        "Algumas distâncias. Alguns reencontros","Um te amo","Fim de um aniversário"
+        "Algumas distâncias. Alguns reencontros","Um te amo","Fim de um aniversário",
+        "Sábado, 7h40, Ibis, do seu lado"
     ]
     for(let i = 0; i < s.length; i++){songs.appendChild(song(s[i]))}
 

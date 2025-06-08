@@ -13,6 +13,6 @@ export default function photo(){
         }`
 
     const photo = cE("img", style)
-    photo.src = "./assets/ketzia.png"
+    photo.src = "./assets/heart.png"
     return(photo)
 }
